@@ -1,0 +1,26 @@
+# This file defines all module routes (Higher priority routes first)
+# import these routes in the main app as :
+# *     /                       module:ETMS
+
+#GET     /?                      Module.index
+
+#获取票号
+POST    /etms/createticket          ETMS.EtmsApiController.createticket
+#出票
+POST    /etms/createqr              ETMS.EtmsApiController.createqr
+#检票
+POST    /etms/checkinticket         ETMS.EtmsApiController.checkinticket
+#退检票
+POST    /etms/recovercheckinticket  ETMS.EtmsApiController.recovercheckinticket
+#退票
+POST    /etms/returnticket          ETMS.EtmsApiController.returnticket
+#改签
+POST    /etms/alterticket           ETMS.EtmsApiController.alterticket
+#销票
+POST    /etms/cancelticket          ETMS.EtmsApiController.cancelticket
+#取票
+POST    /etms/taketicket            ETMS.EtmsApiController.taketicket
+#纸质票电子化
+POST    /etms/uploadpapertktinfo    ETMS.EtmsApiController.uploadpapertktinfo
+#应急电子票上传
+POST    /etms/uploadLashUpTkts      ETMS.EtmsApiController.uploadLashUpTkts

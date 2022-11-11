@@ -1,0 +1,4 @@
+self: play -> TESTMO 0.1
+
+require:
+    - play
